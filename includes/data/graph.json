@@ -1,0 +1,163 @@
+{
+  "nodes": [
+    {
+      "id": "Agile Development",
+      "group": 1,
+      "property": ""
+    },
+    {
+      "id": "Extreme Programming",
+      "group": 1
+    },
+    {
+      "id": "Algorithm Complexity",
+      "group": 2
+    },
+    {
+      "id": "Quadratic",
+      "group": 2
+    },
+    {
+      "id": "Constant",
+      "group": 2
+    },
+    {
+      "id": "Linear",
+      "group": 2
+    },
+    {
+      "id": "Lograthmic",
+      "group": 2
+    },
+    {
+      "id": "N log N",
+      "group": 2
+    },
+    {
+      "id": "Ant",
+      "group": 3
+    },
+    {
+      "id": "Build File",
+      "group": 3
+    },
+    {
+      "id": "Architecture Patterns",
+      "group": 4
+    },
+    {
+      "id": "Messaging",
+      "group": 4
+    },
+    {
+      "id": "pub sub",
+      "group": 4
+    },
+    {
+      "id": "Array",
+      "group": 5
+    },
+    {
+      "id": "SingleDimensionalArray",
+      "group": 5
+    },
+    {
+      "id": "MultiDimensionalArray",
+      "group": 5
+    },
+    {
+      "id": "a1",
+      "group": 6
+    },
+    {
+      "id": "b1",
+      "group": 6
+    }
+  ],
+  "links": [
+    {
+      "source": "Agile Development",
+      "target": "Extreme Programming",
+      "value": 10,
+      "relation": "subconcept of",
+      "id": "Agile DevelopmentExtreme Programming"
+    },
+    {
+      "source": "Algorithm Complexity",
+      "target": "Quadratic",
+      "value": 10,
+      "relation": "subconcept of",
+      "id": "Algorithm ComplexityQuadratic"
+    },
+    {
+      "source": "Algorithm Complexity",
+      "target": "Constant",
+      "value": 6,
+      "relation": "subconcept of",
+      "id": "Algorithm ComplexityConstant"
+    },
+    {
+      "source": "Algorithm Complexity",
+      "target": "Linear",
+      "value": 1,
+      "relation": "subconcept of",
+      "id": "Algorithm ComplexityLinear"
+    },
+    {
+      "source": "Algorithm Complexity",
+      "target": "Lograthmic",
+      "value": 1,
+      "relation": "subconcept of",
+      "id": "Algorithm ComplexityLograthmic"
+    },
+    {
+      "source": "Algorithm Complexity",
+      "target": "N log N",
+      "value": 1,
+      "relation": "subconcept of",
+      "id": "Algorithm ComplexityN log N"
+    },
+    {
+      "source": "Ant",
+      "target": "Build File",
+      "value": 2,
+      "relation": "related",
+      "id": "AntBuild File"
+    },
+    {
+      "source": "Architecture Patterns",
+      "target": "Messaging",
+      "value": 1,
+      "relation": "exampleOf",
+      "id": "Architecture PatternsMessaging"
+    },
+    {
+      "source": "Architecture Patterns",
+      "target": "pub sub",
+      "value": 3,
+      "relation": "exampleOf",
+      "id": "Architecture Patternspub sub"
+    },
+    {
+      "source": "Array",
+      "target": "MultiDimensionalArray",
+      "value": 1,
+      "relation": "subconcept of",
+      "id": "ArrayMultiDimensionalArray"
+    },
+    {
+      "source": "SingleDimensionalArray",
+      "target": "Array",
+      "value": 1,
+      "relation": "subconcept of",
+      "id": "ArraySingleDimensionalArray"
+    },
+    {
+      "source": "a1",
+      "target": "b1",
+      "value": 1,
+      "relation": "sub concept of",
+      "id": "a1b1"
+    }
+  ]
+}

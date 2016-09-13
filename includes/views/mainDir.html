@@ -1,0 +1,17 @@
+<section class="mainPanel" flex>
+  <div class="navbar navbar-fixed-top headerfixedbg" md-whiteframe="3">
+    <div class="header" layout="row" layout-align="center center" flex >
+      <span class="md-display-1">Smart Search UI</span>
+    </div>
+    <query-display></query-display>
+  </div>
+
+  <div layout="row" flex layout-align="center none">
+    <section class="mainbox" flex=40 >
+      <filter-result-card></filter-result-card>
+    </section>
+    <md-content class="mainbox" flex=60>
+      <div ui-view></div>
+    </md-content>
+  </div>
+</section>

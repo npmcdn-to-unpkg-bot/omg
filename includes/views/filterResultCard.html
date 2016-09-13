@@ -1,0 +1,15 @@
+<div layout="column" flex layout-align="center center">
+  <div layout="row" layout-align="center center" flex="70">
+    <span class="md-headline" flex="95">I am looking for</span>
+    <div flex="5" class="filteraddbtn">
+      <md-button id="addBtn99999" class="md-fab md-primary md-raised md-mini" aria-label="Add Filter" ng-click="addFilter(99999)"><b>&#43;</b>
+        <md-tooltip md-direction="right">
+              Add
+        </md-tooltip>
+      </md-button>
+    </div>
+  </div>
+  <section id="filterBox" layout="column" layout-align="center center" flex ng-repeat="index in filterArray">
+    <filter-add></filter-add>
+  </section>
+</div>

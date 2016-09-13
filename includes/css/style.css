@@ -1,0 +1,155 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-    ng-cloak {
+        display: none !important;
+}
+body {
+  background-image: url('../img/bg.png');
+}
+
+.header {
+  color:#FFF;
+  padding-top: 10px;
+}
+
+.graphBg {
+  background-color: #D2D7D3;
+}
+
+.links path {
+ stroke: gray;
+ stroke-opacity: 0.6;
+ fill:none;
+ stroke-width: 1.5px;
+}
+
+.nodes circle {
+ stroke: #fff;
+ stroke-width: 1.5px;
+}
+circle:hover{
+       fill: green;
+       stroke: brown;
+       stroke-width: 2.5px;
+}
+
+#filterAdd {
+  margin: 10px 0px;
+}
+
+.expandBtn {
+  padding:0px !important;
+  height:10px !important;
+  width:15px !important;
+  color: #000;
+}
+
+.filteraddbtn {
+  padding:17px;
+}
+
+.iconText{
+  font-size: 2em;
+}
+
+.expandBox {
+    background-color:#8A2D3C;
+    padding: 15px 10px;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+    border-color: #000;
+}
+
+md-input-container:not(.md-input-invalid).md-input-focused label {
+    color: #000;
+}
+
+/*md-autocomplete input:not(.md-input) {
+  background-color: grey;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+md-autocomplete md-autocomplete-wrap {
+  background-color: grey;
+}
+
+md-autocomplete button md-icon {
+  color:#000;
+}*/
+
+.criteriaauto li{
+
+}
+
+md-autocomplete{
+  width: 200px !important;
+  min-width: 30px !important;
+  color: #000;
+}
+
+.mainPanel {
+  padding:30px;
+  background-image: url('../img/bg.png');
+}
+
+.navbar {
+  background-image: url('../img/bg.png');
+}
+
+.mainbox {
+  padding:20px 5px;
+  margin-top: 90px;
+  background: transparent;
+  color: rgba(238,238,238,0.3);
+}
+
+.panelDefaultText{
+  margin: 150px 20px;
+  color: rgba(238,238,238,0.3);
+}
+
+md-tooltip {
+  z-index:10000;
+}
+
+.searchcard {
+  background-color: #D2D7D3;
+}
+
+.removebtn {
+  background-color: red;
+}
+
+.queryBox {
+  background: #8A2D3C;
+  text-align: center;
+  height: 50px;
+  margin-right: 10px;
+  padding: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.queryContainer {
+  margin: 10px 37px;
+}
+
+.profile {
+  font-size: 16;
+  font-weight: bold;
+  font-family: sans-serif;
+  }
+
+md-radio-group {
+  color:#000;
+}
+
+md-card {
+  padding-top: 5px;
+  color: #000;
+}
+
+.addbutton {
+  font-size: 2em;
+}
+.addbuttontip {
+  font-size: 1.2em;
+}

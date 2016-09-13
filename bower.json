@@ -1,0 +1,23 @@
+{
+  "name": "smartSearchUI",
+  "description": "search-portal",
+  "main": "index.html",
+  "keywords": [
+    "smart",
+    "search",
+    "query",
+    "builder"
+  ],
+  "authors": [
+    "cts-wave-2"
+  ],
+  "license": "santo",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

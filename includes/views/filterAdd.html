@@ -1,0 +1,80 @@
+<div id="filterAdd" layout="row" flex id="{{'filterBox'+$index}}">
+  <section class="expandBox" layout="row" flex="90" >
+    <div layout="column" flex>
+      <div layout="row" layout-align="center center" flex id="{{'andOrBox'+$index}}" ng-show="$index!=0">
+        <div flex="30">
+          <md-radio-group ng-model="andOr" layout="row" ng-change="andOrFn(andOr,$index)" >
+            <md-radio-button value="or" class="md-primary" >Or</md-radio-button>
+            <md-radio-button value="and" class="md-primary"> And </md-radio-button>
+          </md-radio-group>
+        </div>
+      </div>
+      <div layout="row" flex>
+        <div flex="10">
+          <md-button id="{{'expandBtn'+$index}}" class="md-icon-button expandBtn" ng-click="expandBox($index)">&#9660;</md-button>
+        </div>
+
+          <md-autocomplete flex="45"
+                    md-menu-class = "criteriaauto"
+                    ng-disabled="isDisabled"
+                    md-no-cache="noCache"
+                    md-selected-item="selectedCriteria"
+                    md-search-text="searchCriteria"
+                    md-items="item in searchCriteriafn(searchCriteria)"
+                    md-item-text="item.criteria"
+                    md-min-length="1" md-autoselect="true"
+                    placeholder="Criteria"
+                    md-selected-item-change="criteriaTrigger($index)"
+                    required >
+                  <md-item-template>
+                    <span md-highlight-text="searchText" md-highlight-flags="^i">{{item.criteria}}</span>
+                  </md-item-template>
+                  <md-not-found>
+                    No locations matching "{{searchCriteria}}" were found.
+                  </md-not-found>
+          </md-autocomplete>
+
+          <md-autocomplete flex="40" flex-offset="5"
+                    ng-disabled="isDisabled"
+                    md-no-cache="noCache"
+                    md-selected-item="selectedRelation"
+                    md-search-text="searchRelation"
+                    md-items="item in searchRelationfn(searchRelation)"
+                    md-item-text="item.relation"
+                    md-min-length="1"
+                    ng-model="relationQuery"
+                    placeholder="Relation"
+                    md-selected-item-change="relationTrigger($index)"
+                    required>
+                  <md-item-template>
+                    <span md-highlight-text="searchText" md-highlight-flags="^i">{{item.relation}}</span>
+                  </md-item-template>
+                  <md-not-found>
+                    No relations matching "{{searchRelation}}" were found.
+                  </md-not-found>
+          </md-autocomplete>
+      </div>
+      <div layout="row" flex-offset="10" flex>
+        <md-input-container flex class="valueBox" >
+          <label>Value</label>
+          <input type="text" ng-model="valueQuery"   ng-blur="valueTrigger($index)"/>
+        </md-input-container>
+      </div>
+      <div id="{{'expandBox'+$index}}" layout="row" ng-show="false" flex>
+        <in-depth-filters></in-depth-filters>
+      </div>
+    </div>
+  </section>
+  <div flex="10" layout="column" layout-align="center center">
+    <md-button class="md-fab md-mini md-warn md-raised" aria-label="Remove Filter" ng-click="removeFilter($index)"><b>x</b>
+      <md-tooltip md-direction="top">
+            Remove
+      </md-tooltip>
+    </md-button>
+    <md-button id="{{'addBtn'+$index}}" class="md-fab md-primary md-raised md-mini" aria-label="Add Filter" ng-click="addFilter($index)"><b>&#43;</b>
+        <md-tooltip md-direction="bottom">
+              Add
+        </md-tooltip>
+    </md-button>
+    </div>
+  </div>

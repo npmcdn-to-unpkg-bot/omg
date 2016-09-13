@@ -1,0 +1,32 @@
+<md-card class="searchcard" layout="row" md-whiteframe="5" flex>
+  <md-card-content flex>
+    <div flex layout="row" layout-align="start center">
+        <img src="includes/img/gravatar_default.png"  width="100" height="100"  alt="profile" flex="15">
+        <div layout="row" layout-align="start  center" flex-offset="5" flex="80">
+               <div flex="80">
+                    <span class="md-display-1">{{profile.Name}}</span>
+               </div>
+               <div flex-offset="10" flex="10" class="md-body-3"><span class="profile">Age:</span>{{profile.Age}}</div>
+       </div>
+    </div>
+    <div layout="column" layout-align="center space-around" flex>
+        <div layout="row" layout-align="start  center" flex>
+            <div class="md-body-2"><span class="profile">Address:</span> {{profile.Address}}</div>
+        </div>
+        <div layout="row" layout-align="start  center" flex>
+             <div class="md-body-2" flex=50><span class="profile">Skills:</span> {{profile.ToolsAndTechnology}}</div>
+             <div flex="50" class="md-body-2"><span class="profile">University:</span> {{profile.University}}</div>
+        </div>
+        <div layout="row" layout-align="start  center" flex>
+            <div flex="50" class="md-body-2"><span class="profile">Languages Known:</span> {{profile.LanguagesKnown}}</div>
+             <div flex="25" class="md-body-2"><span class="profile">Onsite Projects:</span> {{profile.OnSiteProjects}}</div>
+             <div  flex="25" class="md-body-2"><span class="profile">Offsite Projects:</span>{{profile.OffSiteProjects}}</div>
+        </div>
+        <div layout="row" layout-align="start  center" flex>
+             <div  flex="35" class="md-body-2"><span class="profile">Work Experience:</span>{{profile.WorkExperience}} Years</div>
+             <div flex="40" class="md-body-2"><span class="profile">Current Location:</span> {{profile.CurrentLocation}}</div>
+             <div flex="25" class="md-body-2"><span class="profile">Country:</span>{{profile.Country}}</div>
+        </div>
+      </div>
+  </md-card-content>
+</md-card>
